@@ -1,0 +1,19 @@
+[GENERAL]
+dt = 4.0816358E-4
+writeinterval = 50
+numsteps = 2500
+
+[VELOCITY]
+density = 1.205
+viscosity = 1.8E-5
+
+[PARTICLE]
+npart = 1000
+distributesphere = 0.0, 0.0, 0.0, 0.15, 0.40
+diameter = 100E-6
+density = 3307.327448979591
+timestepper = 1
+coupling = 1
+periodicx = yes
+periodicy = yes
+periodicz = yes
