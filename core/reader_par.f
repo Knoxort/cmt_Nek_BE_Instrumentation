@@ -784,16 +784,12 @@ c set particle options
 
       call finiparser_getDbl(d_out,'particle:bmnpart',ifnd)
       if(ifnd .eq. 1) then
-         ibm_npart = int(d_out)
-         print *,"d_out", d_out
-         print *,"ibm_npart:", ibm_npart
+         ibm_n = int(d_out)
       endif
 
       call finiparser_getDbl(d_out,'particle:bmngpart',ifnd)
       if(ifnd .eq. 1) then
-         ibm_ngpart = int(d_out)
-         print *,"d_out", d_out
-         print *,"ibm_ngpart:", ibm_ngpart
+         ibm_n = int(d_out)
       endif
 
       call finiparser_getDbl(d_out,'particle:temperature',ifnd)
@@ -1076,19 +1072,11 @@ c     call bcast(binb , 6*wdsize)
       call bcast(plane_wall_coords, 6*n_walls*wdsize)
       call bcast(cyl_wall_coords, 7*n_walls*wdsize)
 
-      print *,"bp0:"
-      print *,"ibm_nw:", nw
-      print *,"ibm_npart:", ibm_npart
-      print *,"ibm_ngpart:", ibm_ngpart
       call bcast(nw, isize)
       call bcast(ibm_nw, isize)
       call bcast(ibm_ngw, isize)
-      print *,"bp1:"
-      print *,"ibm_nw:", nw
-      print *,"ibm_npart:", ibm_npart
-      print *,"ibm_ngpart:", ibm_ngpart
-      call bcast(ibm_npart, isize)
-      call bcast(ibm_ngpart, isize)
+      call bcast(ibm_n, isize)
+      call bcast(ibm_ng, isize)
       call bcast(part_force , 5*isize)
       call bcast(time_integ , isize)
       call bcast(ifrectp , isize)

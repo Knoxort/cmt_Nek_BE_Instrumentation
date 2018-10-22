@@ -93,16 +93,16 @@ c
 
 c        correct nwe if discrepancy on rank 0
          print *,"bp3:"
-         print *,"nw:", nw
+         print *,"nw:", nw                       ! num total parts?
          nwe         = int(nw/np)                ! num. part per proc
-         nw_tmp      = iglsum(nwe,1)
+         nw_tmp      = iglsum(nwe,1)             ! num ?
          ndef        = nw - nw_tmp
          if (nid .lt. ndef) nwe = nwe + 1
 
 c        main loop to distribute particles
-
-c      print *,"upl_time:",nid,istep,n,(upl_e - upl_s)
-
+         do i_pt_part = 1,nwe
+            n = n + 1
+         enddo
   754 continue
             ! Error checking
             if (n.gt.llpart)then 
@@ -573,17 +573,15 @@ c      write ( *, '(a)' ) '  Hello, world!'
       !print *,"nwe value:",nwe
       !print *,"bm_nw value:",ibm_nw
       !print *,"bm_ngw value:",ibm_ngw
-      !print *,"n before:",n
-      !   do i_pt_part = 1,nwe
-      !      n = n + 1
-      print *,"ibm_npart:", ibm_npart
-      print *,"ibm_ngpart:", ibm_ngpart
+      !print *,"n before:",nine lpm_usr_p
+c      do i_pt_part = 1,nwe
+c         n = n + 1
 
-!      ibm_npart = 25
-!      ibm_ngpart = 12
-
-      print *,"ibm_npart:", ibm_npart
-      print *,"ibm_ngpart:", ibm_ngpart
+      if(nid .gt. 0)then
+      !   print *,"Step Number: ", istep
+c         print *,"ibm_n:", ibm_n
+c         print *,"********************"
+      endif
 
       if (istep .gt. time_delay) then
 
@@ -648,7 +646,7 @@ c      write ( *, '(a)' ) '  Hello, world!'
 
       endif ! time_delay
 
-
+      print *,"******************************************************"
 c      write ( *, '(a)' ) '  upl_time:'
 c      print *,"upl_time:",nid,istep,n,(upl_e - upl_s)
 c      print *,"my_tyme:",nid,istep,n,upl_e
@@ -2670,9 +2668,15 @@ c     > if bc_part = -1,1 then particles are killed (outflow)
 
       integer in_part(llpart)
 
+      if(nid .gt. 0)then
+         print *,"Update Particle Location: "
+         print *,"n: ", n
+      endif
+
       jx0 = jx
 
       do i=1,n
+         print *,"n: ", n
          in_part(i) = 0
          do j=0,ndim-1
             if (rpart(jx0+j,i).lt.xdrange(1,j+1))then
@@ -2734,17 +2738,18 @@ c     > if bc_part = -1,1 then particles are killed (outflow)
       include 'SIZE'
       include 'LPM'
 
-      !print *,"Made it in bm_update_particle_location",
-      !write(6,*)'Made it in bm_update_particle_location',
-
       integer in_part(llpart)
 
-      write ( *, '(a)' ) '  Made it in bm_update_particle_location!'
+c      if(nid .gt. 0)then
+c         print *,"BM Update Particle Location: "
+c         print *,"ibm_n: ", ibm_n
+c      endif
 
       jx0 = jx
 
       !do i=1,ibm_n
-      do i=1,n
+      do i=1,ibm_n
+         print *,"ibm_n: ", ibm_n
          in_part(i) = 0
          do j=0,ndim-1
             if (bm_rpart(jx0+j,i).lt.xdrange(1,j+1))then
@@ -3992,8 +3997,6 @@ c----------------------------------------------------------------------
 
       ! set some defaults
       nw = 0
-      !ibm_npart = 25
-      !ibm_npart = 12
       rxbo(1,1) = -1E8
       rxbo(2,1) = -1E8
       rxbo(1,2) = -1E8
@@ -4851,8 +4854,8 @@ c
                time_cmt   = time_cmt + dt_cmt
                if (abs(time_integ).eq.1)
      >            call set_tstep_coef_part(rdt_part)
-               if (nid.eq. 0) 
-     >            write(6,*) 'pre-sim_io time',istep,time,dt_cmt
+       !        if (nid.eq. 0) 
+     >!            write(6,*) 'pre-sim_io time',istep,time,dt_cmt
             endif
 
             call lpm_usr_particles_solver
