@@ -54,7 +54,8 @@ mver=17.0.4
 
 # set defaults
 #: ${SOURCE_ROOT:="$HOME/Nek5000"}
-: ${SOURCE_ROOT:="/home/tjohnson/work/research/NGEE/workspace/Nek5000-lpm_stable"}
+#: ${SOURCE_ROOT:="/home/tjohnson/work/research/NGEE/workspace/Nek5000-lpm_stable"}
+: ${SOURCE_ROOT:="/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation"}
 : ${FC:="mpif77"}
 : ${CC:="mpicc"}
 : ${MPI:=1}

@@ -1,6 +1,0 @@
-SOURCE_ROOT=/home/tjohnson/work/research/NGEE/workspace/Nek5000-lpm_stable
-FC=mpif77
-FFLAGS= -fdefault-real-8 -fdefault-double-8 -cpp
-CC=mpicc
-CFLAGS=
-PPLIST=LPM MPI UNDERSCORE TIMER

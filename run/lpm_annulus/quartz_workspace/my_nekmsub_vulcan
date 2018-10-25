@@ -1,0 +1,13 @@
+#!/bin/sh
+#MSUB -q psmall
+#MSUB -l nodes=1
+#MSUB -l walltime=00:15:00
+#MSUB -V
+
+numtasks=4
+CASE=lpm_annulus
+
+sleep 5
+echo "running with $numtasks"
+srun -n$numtasks ./nek5000 uniform > $CASE.log
+sleep 5

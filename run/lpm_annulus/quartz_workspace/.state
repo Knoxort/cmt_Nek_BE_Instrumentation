@@ -1,0 +1,6 @@
+SOURCE_ROOT=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation
+FC=mpif77
+FFLAGS= -r8 -fpconstant -fpp
+CC=mpicc
+CFLAGS=
+PPLIST=LPM MPI UNDERSCORE TIMER
