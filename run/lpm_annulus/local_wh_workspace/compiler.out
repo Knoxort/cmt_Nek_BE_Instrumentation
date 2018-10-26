@@ -1,0 +1,55 @@
+build 3rd-party software ...
+--2018-10-26 11:38:25--  https://github.com/gslib/gslib/archive/v1.0.1.tar.gz
+Resolving github.com (github.com)... 192.30.253.112, 192.30.253.113
+Connecting to github.com (github.com)|192.30.253.112|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/gslib/gslib/tar.gz/v1.0.1 [following]
+--2018-10-26 11:38:25--  https://codeload.github.com/gslib/gslib/tar.gz/v1.0.1
+Resolving codeload.github.com (codeload.github.com)... 192.30.253.121, 192.30.253.120
+Connecting to codeload.github.com (codeload.github.com)|192.30.253.121|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘v1.0.1.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  775K
+    50K .......... .......... .......... .......... .......... 1.87M
+   100K .......... .......... ........                         11.1M=0.09s
+
+2018-10-26 11:38:26 (1.34 MB/s) - ‘v1.0.1.tar.gz’ saved [131385]
+
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/gs.c -o src/gs.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/sort.c -o src/sort.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/sarray_transfer.c -o src/sarray_transfer.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/sarray_sort.c -o src/sarray_sort.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/gs_local.c -o src/gs_local.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/fail.c -o src/fail.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/crystal.c -o src/crystal.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/comm.c -o src/comm.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/tensor.c -o src/tensor.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/sparse_cholesky.c -o src/sparse_cholesky.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/xxt.c -o src/xxt.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/amg.c -o src/amg.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/fcrystal.c -o src/fcrystal.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/fcrs.c -o src/fcrs.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/findpts.c -o src/findpts.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/findpts_local.c -o src/findpts_local.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/obbox.c -o src/obbox.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/poly.c -o src/poly.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/lob_bnd.c -o src/lob_bnd.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/findpts_el_3.c -o src/findpts_el_3.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/findpts_el_2.c -o src/findpts_el_2.o
+mpicc  -I./src -DMPI -DUSEMPIIO -DUNDERSCORE -DUSE_USR_EXIT -DPREFIX=gslib_ -DFPREFIX=fgslib_ -DGLOBAL_LONG_LONG -c src/rand_elt_test.c -o src/rand_elt_test.o
+'./src/libgs.a' -> '/home/tjohnson/work/research/nek_4way_repo/3rd_party/gslib/gslib-1.0.1/../lib/libgs.a'
+mpif77 -c  -O2 -fdefault-real-8 -fdefault-double-8 -cpp -DLPM -DMPI -DUNDERSCORE -DTIMER -I/home/tjohnson/work/research/nek_4way_repo/run/lpm_annulus/local_wh_workspace -I/home/tjohnson/work/research/nek_4way_repo/core -I./ /home/tjohnson/work/research/nek_4way_repo/core/reader_par.f -o obj/reader_par.o
+mpif77 -c  -O2 -fdefault-real-8 -fdefault-double-8 -cpp -DLPM -DMPI -DUNDERSCORE -DTIMER -I/home/tjohnson/work/research/nek_4way_repo/run/lpm_annulus/local_wh_workspace -I/home/tjohnson/work/research/nek_4way_repo/core -I./ /home/tjohnson/work/research/nek_4way_repo/core/lpm.f -o obj/lpm.o
+'uniform.usr' -> 'uniform.f'
+mpif77 -c  -O2 -fdefault-real-8 -fdefault-double-8 -cpp -DLPM -DMPI -DUNDERSCORE -DTIMER -I/home/tjohnson/work/research/nek_4way_repo/run/lpm_annulus/local_wh_workspace -I/home/tjohnson/work/research/nek_4way_repo/core -I./ /home/tjohnson/work/research/nek_4way_repo/run/lpm_annulus/local_wh_workspace/uniform.f  -o obj/uniform.o 
+mpif77  -O2 -fdefault-real-8 -fdefault-double-8 -cpp -DLPM -DMPI -DUNDERSCORE -DTIMER -I/home/tjohnson/work/research/nek_4way_repo/run/lpm_annulus/local_wh_workspace -I/home/tjohnson/work/research/nek_4way_repo/core -I./ -o nek5000 obj/uniform.o obj/drive.o obj/drive1.o obj/drive2.o obj/plan5.o obj/plan4.o obj/bdry.o obj/coef.o obj/conduct.o obj/connect1.o obj/connect2.o obj/dssum.o obj/edgec.o obj/eigsolv.o obj/gauss.o obj/genxyz.o obj/navier1.o obj/makeq.o obj/navier0.o obj/navier2.o obj/navier3.o obj/navier4.o obj/prepost.o obj/speclib.o obj/map2.o obj/mvmesh.o obj/ic.o obj/gfldr.o obj/ssolv.o obj/planx.o obj/math.o obj/mxm_wrapper.o obj/hmholtz.o obj/gfdm_par.o obj/gfdm_op.o obj/gfdm_solve.o obj/subs1.o obj/subs2.o obj/genbox.o obj/gmres.o obj/hsmg.o obj/convect.o obj/induct.o obj/perturb.o obj/navier5.o obj/navier6.o obj/navier7.o obj/navier8.o obj/fast3d.o obj/fasts.o obj/calcz.o obj/byte.o obj/chelpers.o obj/byte_mpi.o obj/postpro.o obj/intp_usr.o obj/cvode_driver.o obj/nek_comm.o obj/vprops.o obj/makeq_aux.o obj/papi.o obj/nek_in_situ.o obj/reader_rea.o obj/reader_par.o obj/reader_re2.o obj/finiparser.o obj/iniparser.o obj/dictionary.o obj/hpf.o obj/mxm_std.o obj/comm_mpi.o obj/singlmesh.o obj/blas.o obj/dsygv.o obj/lpm.o -L/home/tjohnson/work/research/nek_4way_repo/3rd_party/gslib/lib -lgs 
+
+#############################################################
+#                  Compilation successful!                  #
+#############################################################
+   text	   data	    bss	    dec	    hex	filename
+2483843	  23732	150999816	153507391	926563f	nek5000
+
+
