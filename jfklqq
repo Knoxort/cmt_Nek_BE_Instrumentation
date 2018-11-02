@@ -1,0 +1,94 @@
+[33mcommit c83a13cbcb4ab179e6d8270a3549fb9b4a4afb2d[m
+Author: Trokon Johnson <trokon@quartz2498.llnl.gov>
+Date:   Fri Nov 2 08:25:27 2018 -0700
+
+    Okay, after all that, we should have a pretty good working, consistently running version of nek5000 in this push. Big fixes include, by my recollection. 1). Removing the exit call that ended the run after the PRE COLLISIONS phase and 2). Having a directory where nek5000 can actually find the rea file, though I'm not sure why it can't sometimes. I've zipped this directory in my quartz workspace, as I really want to clean all of this up, but I'll be really ticked if this breaks something. If all goes well, the next steps will be 1). Updating the wrapper and generate functions to make sure they work correctly, and that they are updated with the new parameter space. 2). Integrating the new files that Sai has to send me, namely the SIZE and .box file, to ensure that we've got the right problem. Also, just removed the small cases tarball because git has problems with such large file sizes. Should proably do something similar with log files. Also, had to get rid of some of those nek5000 executables, because those suckers are pretty big too.
+
+[33mcommit 91c28b73815d24f2da65cbc488cbeafb742e5884[m
+Author: Trokon Johnson <trokon@quartz2498.llnl.gov>
+Date:   Fri Nov 2 08:12:43 2018 -0700
+
+    Okay, after all that, we should have a pretty good working, consistently running version of nek5000 in this push. Big fixes include, by my recollection. 1). Removing the exit call that ended the run after the PRE COLLISIONS phase and 2). Having a directory where nek5000 can actually find the rea file, though I'm not sure why it can't sometimes. I've zipped this directory in my quartz workspace, as I really want to clean all of this up, but I'll be really ticked if this breaks something. If all goes well, the next steps will be 1). Updating the wrapper and generate functions to make sure they work correctly, and that they are updated with the new parameter space. 2). Integrating the new files that Sai has to send me, namely the SIZE and .box file, to ensure that we've got the right problem. Also, just removed the small cases tarball because git has problems with such large file sizes. Should proably do something similar with log files. Also, had to get rid of some of those nek5000 executables, because those suckers are pretty big too.
+
+[33mcommit 0c4e56df26c48840cb72961a1d4aab70588e47c6[m
+Author: Trokon Johnson <trokon@quartz2498.llnl.gov>
+Date:   Fri Nov 2 08:05:11 2018 -0700
+
+    Okay, after all that, we should have a pretty good working, consistently running version of nek5000 in this push. Big fixes include, by my recollection. 1). Removing the exit call that ended the run after the PRE COLLISIONS phase and 2). Having a directory where nek5000 can actually find the rea file, though I'm not sure why it can't sometimes. I've zipped this directory in my quartz workspace, as I really want to clean all of this up, but I'll be really ticked if this breaks something. If all goes well, the next steps will be 1). Updating the wrapper and generate functions to make sure they work correctly, and that they are updated with the new parameter space. 2). Integrating the new files that Sai has to send me, namely the SIZE and .box file, to ensure that we've got the right problem. Also, just removed the small cases tarball because git has problems with such large file sizes. Should proably do something similar with log files.
+
+[33mcommit 36e0abdfeb3801e622c313d37b365dcb275b3acb[m
+Author: Trokon Johnson <trokon@quartz2498.llnl.gov>
+Date:   Fri Nov 2 07:59:20 2018 -0700
+
+    Okay, after all that, we should have a pretty good working, consistently running version of nek5000 in this push. Big fixes include, by my recollection. 1). Removing the exit call that ended the run after the PRE COLLISIONS phase and 2). Having a directory where nek5000 can actually find the rea file, though I'm not sure why it can't sometimes. I've zipped this directory in my quartz workspace, as I really want to clean all of this up, but I'll be really ticked if this breaks something. If all goes well, the next steps will be 1). Updating the wrapper and generate functions to make sure they work correctly, and that they are updated with the new parameter space. 2). Integrating the new files that Sai has to send me, namely the SIZE and .box file, to ensure that we've got the right problem.
+
+[33mcommit dbab1cf5454f66741a96d0541d57edf7de950aed[m
+Author: Trokon Johnson <trokon@quartz764.llnl.gov>
+Date:   Thu Oct 25 06:15:34 2018 -0700
+
+    Ok, I'm probably gonna have to do a merge, but I'm making different folders in the run example folder for both the local worskpace on my lab desktop, and on quartz.
+
+[33mcommit 4b5e05bd545d7437192c7cdd7ea06f3fd2494454[m
+Merge: 3ab69c0 0bf90ea
+Author: Trokon Johnson <trokon@quartz764.llnl.gov>
+Date:   Thu Oct 25 06:07:54 2018 -0700
+
+    WIP on main_instrumentation: 3ab69c0 Removed .gitignore in the 3rd party folder
+
+[33mcommit 0bf90eafb64c462250ddff9fe95d110ed1077e81[m
+Author: Trokon Johnson <trokon@quartz764.llnl.gov>
+Date:   Thu Oct 25 06:07:54 2018 -0700
+
+    index on main_instrumentation: 3ab69c0 Removed .gitignore in the 3rd party folder
+
+[33mcommit 9d2e91e13664d4d4b43bcfa3a8909599d92107d3[m
+Author: Knoxort <tkjohns131@gmail.com>
+Date:   Thu Oct 25 08:32:47 2018 -0400
+
+    Getting weird error messsages on quartz when I run. Just ran on workhorse, and it ran to completion. Because of that, I'm pushing this working version to pull on quartz, to see if it fixes anything.
+
+[33mcommit 3ab69c0efd7b972a9a2444747a1971d974633b40[m
+Author: Knoxort <tkjohns131@gmail.com>
+Date:   Wed Oct 24 10:19:35 2018 -0400
+
+    Removed .gitignore in the 3rd party folder
+
+[33mcommit 6852265b7b480bf640d2a828a031a401080f46ab[m
+Merge: 0c8206c b91d426
+Author: Knoxort <tkjohns131@gmail.com>
+Date:   Tue Oct 23 12:36:27 2018 -0400
+
+    Merge branch 'main_instrumentation' of https://github.com/Knoxort/cmt_Nek_BE_Instrumentation into main_instrumentation
+    Trying to add the run folder, which was held back by some .gitignore nonsense.
+
+[33mcommit 0c8206c05766a2bb1c1263a3ecf440064a37611c[m
+Author: Knoxort <tkjohns131@gmail.com>
+Date:   Tue Oct 23 12:35:52 2018 -0400
+
+    Basically just removing the ignore files, and then using the -f option to ensure that the run folder is being uploaded, unlike last time. Github told me to use the -f option; I'm not sure where these ignore files are coming from.
+
+[33mcommit b91d4266b9235c228494887cf533562e93312a57[m
+Author: Knoxort <tkjohns131@gmail.com>
+Date:   Tue Oct 23 12:33:08 2018 -0400
+
+    Delete .gitignore
+    
+    Same as master branch; not sure why this was here.
+
+[33mcommit bf6081979e045db86fe3d7233a85a664785fbcce[m
+Author: Knoxort <tkjohns131@gmail.com>
+Date:   Tue Oct 23 11:55:52 2018 -0400
+
+    Added Sai's version of the LPM and lpm.f files, which should include the new kind of instrumentation implementation that he wants.
+
+[33mcommit 9dd455a3e12b691e48e3512b7f524d0c4a00d317[m
+Author: Knoxort <tkjohns131@gmail.com>
+Date:   Mon Oct 22 15:35:54 2018 -0400
+
+    Added some work on the input passing. As of now, seems to work correctly. Was going to move towards kernel extraction, but, after talking to Sai, it seems that this is no longer necessary. Finished by finding the root of the quirk where n is always equal to 0. Still not 100% sure how it started; there's a bit too much for me to think that I randomly commented something out. Also, from the way that I fixed it, I'm not 100% sure that everything works properly. When we get to submitting, should check against David's code.
+
+[33mcommit b74424a362f9d52c5bff5dbe482c513766ba92ae[m
+Author: Knoxort <tkjohns131@gmail.com>
+Date:   Thu Oct 18 14:35:39 2018 -0400
+
+    First commit; this is for a CMT-nek 4 way coupling repo for the BE group, specifically to focus on the instrumentation for kernel performance models.
