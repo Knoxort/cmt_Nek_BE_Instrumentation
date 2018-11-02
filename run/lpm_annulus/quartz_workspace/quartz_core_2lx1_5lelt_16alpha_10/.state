@@ -1,6 +1,0 @@
-SOURCE_ROOT=/g/g19/trokon/workspace/nek_4way/Nek5000-lpm_stable
-FC=mpif77
-FFLAGS= -r8 -fpconstant -fpp
-CC=mpicc
-CFLAGS=
-PPLIST=LPM MPI UNDERSCORE TIMER

@@ -1,2 +1,0 @@
-"/g/g19/trokon/workspace/nek_4way/Nek5000-lpm_stable/core/reader_re2.f", line 784: 1525-100 The file name provided in the INQUIRE statement has zero length or contains all blanks.  The program will recover by ignoring the INQUIRE statement.
-2018-10-23 11:45:48.106 (WARN ) [0x400033af950] 12613899:ibm.runjob.client.Job: normal termination with status 228 from rank 5

@@ -1,0 +1,6 @@
+SOURCE_ROOT=/p/lscratchv/chenna1/TST_2018/CMT-nek-instrumentation/cmt_Nek_BE_Instrumentation-master-sai/Nek5000
+FC=mpixlf77
+FFLAGS= -qrealsize=8 -qdpc=e -qsuffix=cpp=f -qsuppress=cmpmsg
+CC=mpixlc
+CFLAGS=
+PPLIST=CMTNEK LPM MPIIO EXTBAR MPI TIMER
