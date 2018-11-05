@@ -1,10 +1,10 @@
-### makefile automatically created by makenek 10/26/2018 08:21:56 ###
+### makefile automatically created by makenek 11/03/2018 07:06:47 ###
 BINNAME=nek5000
 LIBNAME=libnek5000.a
 CASENAME:=uniform
 CASEDIR:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/run/lpm_annulus/quartz_workspace
-S:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo//core
-SCMT:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo//core/cmt
+S:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/core
+SCMT:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/core/cmt
 OPT_INCDIR=./
 OBJDIR=obj
 MPI:=1
@@ -18,7 +18,7 @@ CFLAGS:=
 PPPO=
 PPS=LPM MPI UNDERSCORE TIMER
 USR:=
-USR_LFLAGS:= -L/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo//3rd_party/gslib/lib -lgs
+USR_LFLAGS:= -L/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/3rd_party/gslib/lib -lgs
 VISIT:=0
 VISIT_IFLAGS=
 VISIT_LFLAGS=

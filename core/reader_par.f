@@ -1220,6 +1220,8 @@ c           write(6,*)'help:',lelt,lelv,lelgv
 
       IF(ldimr.NE.LDIM) THEN
          IF(NID.EQ.0) THEN
+           print *,"ldimr is:",ldimr
+           print *,"LDIM is:",LDIM
            WRITE(6,10) LDIM,ldim
    10      FORMAT(//,2X,'Error: Nek has been compiled'
      $             /,2X,'       for spatial dimension equal to',I2,'.'

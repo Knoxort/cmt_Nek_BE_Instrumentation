@@ -5100,7 +5100,7 @@ c            end_cfpp = dnekclock()
          ptdum(1) = dnekclock()
       enddo
 
-      if (nid.eq.0) write(6,*) 'FINISHED PRE COLLISIONS - EXITING NOW'
+      if (nid.eq.0) write(6,*) 'FINISHED PRE COLLISIONS - NOT EXITING'
 !      call exitt
 
       return
