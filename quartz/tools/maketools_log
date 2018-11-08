@@ -1,0 +1,939 @@
+----------------------
+Make amg_hypre...
+----------------------
+make[1]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre'
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for xlC... no
+checking for xlc... no
+checking for icpc... no
+checking for icc... no
+checking for g++... g++
+checking whether make sets $(MAKE)... yes
+checking for ranlib... ranlib
+checking for gcc... /usr/bin/gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /usr/bin/gcc accepts -g... yes
+checking for /usr/bin/gcc option to accept ISO C89... none needed
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking whether we are using the GNU Fortran compiler... yes
+checking whether /usr/bin/gfortran accepts -g... yes
+checking how to get verbose linking output from /usr/bin/gfortran... -v
+checking for Fortran libraries of /usr/bin/gfortran...  -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. -lgfortran -lm -lquadmath
+checking for dummy main to link with Fortran libraries... none
+checking for Fortran name-mangling scheme... lower case, underscore, no extra underscore
+checking for __gxx_personality_v0 in -lstdc++... yes
+checking for cabs in -lm... yes
+checking the hostname... workHorse
+checking the architecture... LINUX
+configure: creating ./config.status
+config.status: creating config/Makefile.config
+config.status: creating HYPRE_config.h
+make[2]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src'
+Making /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/blas ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/blas'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c blas_utils.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dasum.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c daxpy.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dcopy.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c ddot.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgemm.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgemv.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dger.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dnrm2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c drot.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dscal.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dswap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsymm.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsymv.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsyr2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsyr2k.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsyrk.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dtrmm.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dtrmv.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dtrsm.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dtrsv.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c idamax.c 
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/blas'
+
+Making /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/lapack ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/lapack'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dbdsqr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgebd2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgebrd.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgelq2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgelqf.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgels.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgeqr2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgeqrf.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgesvd.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgetrf.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgetrs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dgetf2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlabad.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlabrd.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlacpy.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlae2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlaev2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlange.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlanst.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlansy.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlapy2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlarfb.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlarf.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlarfg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlarft.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlartg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlas2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlascl.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlaset.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlasq1.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlasq2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlasq3.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlasq4.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlasq5.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlasq6.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlasr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlasrt.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlassq.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlaswp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlasv2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlatrd.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dorg2l.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dorg2r.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dorgbr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dorgl2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dorglq.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dorgql.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dorgqr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dorgtr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dorm2r.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dormbr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dorml2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dormlq.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dormqr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dpotf2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dpotrf.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dpotrs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsteqr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsterf.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsyev.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsygs2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsygst.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsygv.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsytd2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dsytrd.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c ieeeck.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -I../blas -c ilaenv.c
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c lapack_utils.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c lsame.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c xerbla.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H  -I.. -I../utilities -c dlamch.c
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/lapack'
+
+Making utilities ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/utilities'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c amg_linklist.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c binsearch.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c exchange_data.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c fortran_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c hypre_ap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c hypre_complex.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c hypre_memory.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c hypre_printf.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c hypre_qsort.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c memory_dmalloc.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c mpistubs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c qsplit.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c random.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c threading.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c timer.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c timing.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c umalloc_local.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c hypre_mpi_comm_f2c.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c hypre_error.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c F90_HYPRE_error.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c hypre_prefix_sum.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c hypre_merge_sort.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I.    -c hypre_hopscotch_hash.c 
+Building libHYPRE_utilities.a ... 
+ar -rcu libHYPRE_utilities.a *.o
+ranlib libHYPRE_utilities.a
+cp -fR ./HYPRE_*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./_hypre_utilities.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./hypre_hopscotch_hash.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./fortran*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/utilities'
+
+Making multivector ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/multivector'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./.. -I./../utilities   -c multivector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./.. -I./../utilities   -c temp_multivector.c 
+Building libHYPRE_multivector.a ... 
+ar -rcu libHYPRE_multivector.a multivector.o temp_multivector.o
+ranlib libHYPRE_multivector.a
+cp -fR *.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/multivector'
+
+Making krylov ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/krylov'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c bicgstab.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c cgnr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c gmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c flexgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c lgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c HYPRE_bicgstab.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c HYPRE_cgnr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c HYPRE_gmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c HYPRE_lgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c HYPRE_flexgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c HYPRE_pcg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c pcg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c HYPRE_lobpcg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../multivector -I./../utilities   -c lobpcg.c 
+Building libHYPRE_krylov.a ... 
+ar -rcu libHYPRE_krylov.a bicgstab.o cgnr.o gmres.o flexgmres.o lgmres.o HYPRE_bicgstab.o HYPRE_cgnr.o HYPRE_gmres.o HYPRE_lgmres.o HYPRE_flexgmres.o HYPRE_pcg.o pcg.o HYPRE_lobpcg.o lobpcg.o
+ranlib libHYPRE_krylov.a
+cp -fR ./HYPRE_*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./krylov.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./lobpcg.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/krylov'
+
+Making seq_mv ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/seq_mv'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c csr_matop.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c csr_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c csr_matvec.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c genpart.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c HYPRE_csr_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c HYPRE_mapped_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c HYPRE_multiblock_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c HYPRE_vector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c mapped_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c multiblock_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c vector.c 
+Building libHYPRE_seq_mv.a ... 
+ar -rcu libHYPRE_seq_mv.a csr_matop.o csr_matrix.o csr_matvec.o genpart.o HYPRE_csr_matrix.o HYPRE_mapped_matrix.o HYPRE_multiblock_matrix.o HYPRE_vector.o mapped_matrix.o multiblock_matrix.o vector.o
+ranlib libHYPRE_seq_mv.a
+cp -fR ./HYPRE_*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./seq_mv.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/seq_mv'
+
+Making parcsr_mv ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/parcsr_mv'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c communicationT.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c F90_HYPRE_parcsr_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c F90_HYPRE_parcsr_vector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c F90_parcsr_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c F90_par_vector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c HYPRE_parcsr_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c HYPRE_parcsr_vector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c new_commpkg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c numbers.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c par_csr_aat.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c par_csr_assumed_part.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c par_csr_bool_matop.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c par_csr_bool_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c par_csr_communication.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c par_csr_matop.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c par_csr_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c par_csr_matop_marked.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c par_csr_matvec.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c par_vector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../seq_mv   -c par_make_system.c 
+Building libHYPRE_parcsr_mv.a ... 
+ar -rcu libHYPRE_parcsr_mv.a communicationT.o F90_HYPRE_parcsr_matrix.o F90_HYPRE_parcsr_vector.o F90_parcsr_matrix.o F90_par_vector.o HYPRE_parcsr_matrix.o HYPRE_parcsr_vector.o new_commpkg.o numbers.o par_csr_aat.o par_csr_assumed_part.o par_csr_bool_matop.o par_csr_bool_matrix.o par_csr_communication.o par_csr_matop.o par_csr_matrix.o par_csr_matop_marked.o par_csr_matvec.o par_vector.o par_make_system.o
+ranlib libHYPRE_parcsr_mv.a
+cp -fR ./HYPRE_*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./_hypre_parcsr_mv.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/parcsr_mv'
+
+Making parcsr_block_mv ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/parcsr_block_mv'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../multivector -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls -I./../IJ_mv -I./../krylov   -c csr_block_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../multivector -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls -I./../IJ_mv -I./../krylov   -c csr_block_matvec.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../multivector -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls -I./../IJ_mv -I./../krylov   -c par_csr_block_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../multivector -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls -I./../IJ_mv -I./../krylov   -c par_csr_block_matvec.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../multivector -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls -I./../IJ_mv -I./../krylov   -c par_csr_block_comm.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../multivector -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls -I./../IJ_mv -I./../krylov   -c par_csr_block_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../multivector -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls -I./../IJ_mv -I./../krylov   -c par_csr_block_rap_communication.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../multivector -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls -I./../IJ_mv -I./../krylov   -c par_csr_block_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../multivector -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls -I./../IJ_mv -I./../krylov   -c par_csr_block_relax.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../multivector -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls -I./../IJ_mv -I./../krylov   -c par_block_nodal_systems.c 
+Building libHYPRE_parcsr_block_mv.a ... 
+ar -rcu libHYPRE_parcsr_block_mv.a csr_block_matrix.o csr_block_matvec.o par_csr_block_matrix.o par_csr_block_matvec.o par_csr_block_comm.o par_csr_block_rap.o par_csr_block_rap_communication.o par_csr_block_interp.o par_csr_block_relax.o par_block_nodal_systems.o
+ranlib libHYPRE_parcsr_block_mv.a
+cp -fR ./par_csr_block_matrix.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include	
+cp -fR ./csr_block_matrix.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/parcsr_block_mv'
+
+Making distributed_matrix ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_matrix'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../parcsr_mv -I./../seq_mv   -c distributed_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../parcsr_mv -I./../seq_mv   -c HYPRE_distributed_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../parcsr_mv -I./../seq_mv   -c distributed_matrix_ISIS.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../parcsr_mv -I./../seq_mv   -c distributed_matrix_PETSc.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../parcsr_mv -I./../seq_mv   -c distributed_matrix_parcsr.c 
+Building libHYPRE_DistributedMatrix.a ... 
+ar -rcu libHYPRE_DistributedMatrix.a distributed_matrix.o HYPRE_distributed_matrix.o distributed_matrix_ISIS.o distributed_matrix_PETSc.o distributed_matrix_parcsr.o
+ranlib libHYPRE_DistributedMatrix.a
+cp -fR ./distributed_matrix.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_matrix'
+
+Making IJ_mv ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/IJ_mv'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls   -c aux_parcsr_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls   -c aux_par_vector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls   -c F90_HYPRE_IJMatrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls   -c F90_HYPRE_IJVector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls   -c F90_IJMatrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls   -c HYPRE_IJMatrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls   -c HYPRE_IJVector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls   -c IJ_assumed_part.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls   -c IJMatrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls   -c IJMatrix_parcsr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls   -c IJVector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../parcsr_ls   -c IJVector_parcsr.c 
+Building libHYPRE_IJ_mv.a ... 
+ar -rcu libHYPRE_IJ_mv.a aux_parcsr_matrix.o aux_par_vector.o F90_HYPRE_IJMatrix.o F90_HYPRE_IJVector.o F90_IJMatrix.o HYPRE_IJMatrix.o HYPRE_IJVector.o IJ_assumed_part.o IJMatrix.o IJMatrix_parcsr.o IJVector.o IJVector_parcsr.o
+ranlib libHYPRE_IJ_mv.a
+cp -fR ./HYPRE_*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./_hypre_IJ_mv.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/IJ_mv'
+
+Making matrix_matrix ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/matrix_matrix'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../distributed_matrix -I./../seq_mv -I./../parcsr_mv   -c HYPRE_ConvertParCSRMatrixToDistributedMatrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I./.. -I./../utilities -I./../distributed_matrix -I./../seq_mv -I./../parcsr_mv   -c HYPRE_ConvertPETScMatrixToDistributedMatrix.c 
+Building libHYPRE_MatrixMatrix.a ... 
+ar -rcu libHYPRE_MatrixMatrix.a HYPRE_ConvertParCSRMatrixToDistributedMatrix.o HYPRE_ConvertPETScMatrixToDistributedMatrix.o
+ranlib libHYPRE_MatrixMatrix.a
+cp -fR ./HYPRE_*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/matrix_matrix'
+
+Making distributed_ls ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_ls'
+Making pilut ...
+make[4]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_ls/pilut'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c comm.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c debug.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c distributed_qsort.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c distributed_qsort_si.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c HYPRE_DistributedMatrixPilutSolver.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c ilut.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c parilut.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c parutil.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c pblas1.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c serilut.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c trifactor.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c util.c 
+Building libHYPRE_DistributedMatrixPilutSolver.a ... 
+ar -rcu libHYPRE_DistributedMatrixPilutSolver.a comm.o debug.o distributed_qsort.o distributed_qsort_si.o HYPRE_DistributedMatrixPilutSolver.o ilut.o parilut.o parutil.o pblas1.o serilut.o trifactor.o util.o
+ranlib libHYPRE_DistributedMatrixPilutSolver.a
+cp -fR ./HYPRE_*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[4]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_ls/pilut'
+Making ParaSails ...
+make[4]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_ls/ParaSails'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c ConjGrad.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c DiagScale.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c FGmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c Hash.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c hypre_ParaSails.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c LoadBal.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c Matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c Mem.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c Numbering.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c OrderStat.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c ParaSails.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c PrunedRows.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c RowPatt.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../distributed_matrix   -c StoredRows.c 
+Building libHYPRE_ParaSails.a ... 
+ar -rcu libHYPRE_ParaSails.a ConjGrad.o DiagScale.o FGmres.o Hash.o hypre_ParaSails.o LoadBal.o Matrix.o Mem.o Numbering.o OrderStat.o ParaSails.o PrunedRows.o RowPatt.o StoredRows.o
+ranlib libHYPRE_ParaSails.a
+make[4]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_ls/ParaSails'
+Making Euclid ...
+make[4]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_ls/Euclid'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c blas_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c Euclid_apply.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c Euclid_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c ExternalRows_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c Factor_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c getRow_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c globalObjects.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c Hash_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c Hash_i_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c ilu_mpi_bj.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c ilu_mpi_pilu.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c ilu_seq.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c io_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c krylov_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c Mat_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c mat_dh_private.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c MatGenFD.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c Mem_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c Numbering_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c Parser_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c shellSort_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c sig_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c SortedList_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c SortedSet_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c SubdomainGraph_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c TimeLog_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c Timer_dh.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I../.. -I. -I./../.. -I./../../utilities -I./../../parcsr_mv -I./../../seq_mv -I./../../distributed_matrix -I./../../hypre/include   -c Vec_dh.c 
+Building libHYPRE_Euclid.a ... 
+ar -rcu libHYPRE_Euclid.a blas_dh.o Euclid_apply.o Euclid_dh.o ExternalRows_dh.o Factor_dh.o getRow_dh.o globalObjects.o Hash_dh.o Hash_i_dh.o ilu_mpi_bj.o ilu_mpi_pilu.o ilu_seq.o io_dh.o krylov_dh.o Mat_dh.o mat_dh_private.o MatGenFD.o Mem_dh.o Numbering_dh.o Parser_dh.o shellSort_dh.o sig_dh.o SortedList_dh.o SortedSet_dh.o SubdomainGraph_dh.o TimeLog_dh.o Timer_dh.o Vec_dh.o
+ranlib libHYPRE_Euclid.a
+make[4]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_ls/Euclid'
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_ls'
+
+Making parcsr_ls ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/parcsr_ls'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c amg_hybrid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c aux_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_hypre_laplace.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_amg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_bicgstab.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_block.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_cgnr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_Euclid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_gmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_flexgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_lgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_hybrid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_int.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_ParaSails.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_pcg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_pilut.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_parcsr_schwarz.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c F90_HYPRE_ams.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c gen_redcs_mat.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_amg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_bicgstab.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_block.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_cgnr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_Euclid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_gmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_flexgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_lgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_hybrid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_int.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_ParaSails.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_pcg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_pilut.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_parcsr_schwarz.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_ams.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_ads.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c HYPRE_ame.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_amg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_amg_setup.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_amg_solve.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_amg_solveT.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_cg_relax_wt.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_coarsen.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_cgc_coarsen.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_coarse_parms.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_coordinates.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_cr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_cycle.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_add_cycle.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_difconv.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_gsmg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_indepset.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_jacobi_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_multi_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_laplace_27pt.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_laplace_9pt.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_laplace.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_lr_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_nongalerkin.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_nodal_systems.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_rap_communication.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_rotate_7pt.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_vardifconv.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_relax.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_relax_more.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_relax_interface.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_scaled_matnorm.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_schwarz.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_stats.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_strength.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_sv_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c par_sv_interp_ln.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c partial.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c pcg_par.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c schwarz.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c block_tridiag.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c ams.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c ads.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I../distributed_ls/Euclid -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../seq_mv -I./../parcsr_mv -I./../distributed_matrix -I./../matrix_matrix -I./../IJ_mv -I./../parcsr_block_mv   -c ame.c 
+Building libHYPRE_parcsr_ls.a ... 
+ar -rcu libHYPRE_parcsr_ls.a amg_hybrid.o aux_interp.o F90_hypre_laplace.o F90_HYPRE_parcsr_amg.o F90_HYPRE_parcsr_bicgstab.o F90_HYPRE_parcsr_block.o F90_HYPRE_parcsr_cgnr.o F90_HYPRE_parcsr_Euclid.o F90_HYPRE_parcsr_gmres.o F90_HYPRE_parcsr_flexgmres.o F90_HYPRE_parcsr_lgmres.o F90_HYPRE_parcsr_hybrid.o F90_HYPRE_parcsr_int.o F90_HYPRE_parcsr_ParaSails.o F90_HYPRE_parcsr_pcg.o F90_HYPRE_parcsr_pilut.o F90_HYPRE_parcsr_schwarz.o F90_HYPRE_ams.o gen_redcs_mat.o HYPRE_parcsr_amg.o HYPRE_parcsr_bicgstab.o HYPRE_parcsr_block.o HYPRE_parcsr_cgnr.o HYPRE_parcsr_Euclid.o HYPRE_parcsr_gmres.o HYPRE_parcsr_flexgmres.o HYPRE_parcsr_lgmres.o HYPRE_parcsr_hybrid.o HYPRE_parcsr_int.o HYPRE_parcsr_ParaSails.o HYPRE_parcsr_pcg.o HYPRE_parcsr_pilut.o HYPRE_parcsr_schwarz.o HYPRE_ams.o HYPRE_ads.o HYPRE_ame.o par_amg.o par_amg_setup.o par_amg_solve.o par_amg_solveT.o par_cg_relax_wt.o par_coarsen.o par_cgc_coarsen.o par_coarse_parms.o par_coordinates.o par_cr.o par_cycle.o par_add_cycle.o par_difconv.o par_gsmg.o par_indepset.o par_interp.o par_jacobi_interp.o par_multi_interp.o par_laplace_27pt.o par_laplace_9pt.o par_laplace.o par_lr_interp.o par_nongalerkin.o par_nodal_systems.o par_rap.o par_rap_communication.o par_rotate_7pt.o par_vardifconv.o par_relax.o par_relax_more.o par_relax_interface.o par_scaled_matnorm.o par_schwarz.o par_stats.o par_strength.o par_sv_interp.o par_sv_interp_ln.o partial.o pcg_par.o schwarz.o block_tridiag.o ams.o ads.o ame.o
+ranlib libHYPRE_parcsr_ls.a
+cp -fR ./HYPRE_*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./_hypre_parcsr_ls.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/parcsr_ls'
+
+Making struct_mv ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/struct_mv'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c assumed_part.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c box_algebra.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c box_boundary.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c box.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c box_manager.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c communication_info.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c computation.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c F90_HYPRE_struct_grid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c F90_HYPRE_struct_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c F90_HYPRE_struct_stencil.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c F90_HYPRE_struct_vector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c HYPRE_struct_grid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c HYPRE_struct_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c HYPRE_struct_stencil.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c HYPRE_struct_vector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c project.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c struct_axpy.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c struct_communication.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c struct_copy.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c struct_grid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c struct_innerprod.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c struct_io.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c struct_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c struct_matrix_mask.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c struct_matvec.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c struct_scale.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c struct_stencil.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities   -c struct_vector.c 
+Building libHYPRE_struct_mv.a ... 
+ar -rcu libHYPRE_struct_mv.a assumed_part.o box_algebra.o box_boundary.o box.o box_manager.o communication_info.o computation.o F90_HYPRE_struct_grid.o F90_HYPRE_struct_matrix.o F90_HYPRE_struct_stencil.o F90_HYPRE_struct_vector.o HYPRE_struct_grid.o HYPRE_struct_matrix.o HYPRE_struct_stencil.o HYPRE_struct_vector.o project.o struct_axpy.o struct_communication.o struct_copy.o struct_grid.o struct_innerprod.o struct_io.o struct_matrix.o struct_matrix_mask.o struct_matvec.o struct_scale.o struct_stencil.o struct_vector.o
+ranlib libHYPRE_struct_mv.a
+cp -fR ./HYPRE_*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./_hypre_struct_mv.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/struct_mv'
+
+Making struct_ls ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/struct_ls'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c coarsen.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c cyclic_reduction.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c F90_HYPRE_struct_bicgstab.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c F90_HYPRE_struct_cycred.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c F90_HYPRE_struct_flexgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c F90_HYPRE_struct_gmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c F90_HYPRE_struct_lgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c F90_HYPRE_struct_hybrid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c F90_HYPRE_struct_int.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c F90_HYPRE_struct_jacobi.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c F90_HYPRE_struct_pcg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c F90_HYPRE_struct_pfmg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c F90_HYPRE_struct_smg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c F90_HYPRE_struct_sparse_msg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c general.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c hybrid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c HYPRE_struct_bicgstab.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c HYPRE_struct_cycred.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c HYPRE_struct_flexgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c HYPRE_struct_gmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c HYPRE_struct_hybrid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c HYPRE_struct_int.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c HYPRE_struct_jacobi.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c HYPRE_struct_lgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c HYPRE_struct_pcg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c HYPRE_struct_pfmg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c HYPRE_struct_smg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c HYPRE_struct_sparse_msg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c jacobi.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c pcg_struct.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c pfmg2_setup_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c pfmg3_setup_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c pfmg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c pfmg_relax.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c pfmg_setup.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c pfmg_setup_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c pfmg_setup_rap5.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c pfmg_setup_rap7.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c pfmg_setup_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c pfmg_solve.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c point_relax.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c red_black_constantcoef_gs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c red_black_gs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c semi.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c semi_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c semi_restrict.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c semi_setup_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c smg2_setup_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c smg3_setup_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c smg_axpy.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c smg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c smg_relax.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c smg_residual.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c smg_setup.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c smg_setup_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c smg_setup_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c smg_setup_restrict.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c smg_solve.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c sparse_msg2_setup_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c sparse_msg3_setup_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c sparse_msg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c sparse_msg_filter.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c sparse_msg_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c sparse_msg_restrict.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c sparse_msg_setup.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c sparse_msg_setup_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv   -c sparse_msg_solve.c 
+Building libHYPRE_struct_ls.a ... 
+ar -rcu libHYPRE_struct_ls.a coarsen.o cyclic_reduction.o F90_HYPRE_struct_bicgstab.o F90_HYPRE_struct_cycred.o F90_HYPRE_struct_flexgmres.o F90_HYPRE_struct_gmres.o F90_HYPRE_struct_lgmres.o F90_HYPRE_struct_hybrid.o F90_HYPRE_struct_int.o F90_HYPRE_struct_jacobi.o F90_HYPRE_struct_pcg.o F90_HYPRE_struct_pfmg.o F90_HYPRE_struct_smg.o F90_HYPRE_struct_sparse_msg.o general.o hybrid.o HYPRE_struct_bicgstab.o HYPRE_struct_cycred.o HYPRE_struct_flexgmres.o HYPRE_struct_gmres.o HYPRE_struct_hybrid.o HYPRE_struct_int.o HYPRE_struct_jacobi.o HYPRE_struct_lgmres.o HYPRE_struct_pcg.o HYPRE_struct_pfmg.o HYPRE_struct_smg.o HYPRE_struct_sparse_msg.o jacobi.o pcg_struct.o pfmg2_setup_rap.o pfmg3_setup_rap.o pfmg.o pfmg_relax.o pfmg_setup.o pfmg_setup_interp.o pfmg_setup_rap5.o pfmg_setup_rap7.o pfmg_setup_rap.o pfmg_solve.o point_relax.o red_black_constantcoef_gs.o red_black_gs.o semi.o semi_interp.o semi_restrict.o semi_setup_rap.o smg2_setup_rap.o smg3_setup_rap.o smg_axpy.o smg.o smg_relax.o smg_residual.o smg_setup.o smg_setup_interp.o smg_setup_rap.o smg_setup_restrict.o smg_solve.o sparse_msg2_setup_rap.o sparse_msg3_setup_rap.o sparse_msg.o sparse_msg_filter.o sparse_msg_interp.o sparse_msg_restrict.o sparse_msg_setup.o sparse_msg_setup_rap.o sparse_msg_solve.o
+ranlib libHYPRE_struct_ls.a
+cp -fR ./HYPRE_*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./_hypre_struct_ls.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/struct_ls'
+
+Making sstruct_mv ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/sstruct_mv'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c F90_HYPRE_sstruct_graph.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c F90_HYPRE_sstruct_grid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c F90_HYPRE_sstruct_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c F90_HYPRE_sstruct_stencil.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c F90_HYPRE_sstruct_vector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c HYPRE_sstruct_graph.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c HYPRE_sstruct_grid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c HYPRE_sstruct_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c HYPRE_sstruct_stencil.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c HYPRE_sstruct_vector.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c sstruct_axpy.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c sstruct_copy.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c sstruct_graph.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c sstruct_grid.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c sstruct_innerprod.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c sstruct_matrix.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c sstruct_matvec.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c sstruct_scale.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c sstruct_stencil.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../utilities -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv   -c sstruct_vector.c 
+Building libHYPRE_sstruct_mv.a ... 
+ar -rcu libHYPRE_sstruct_mv.a F90_HYPRE_sstruct_graph.o F90_HYPRE_sstruct_grid.o F90_HYPRE_sstruct_matrix.o F90_HYPRE_sstruct_stencil.o F90_HYPRE_sstruct_vector.o HYPRE_sstruct_graph.o HYPRE_sstruct_grid.o HYPRE_sstruct_matrix.o HYPRE_sstruct_stencil.o HYPRE_sstruct_vector.o sstruct_axpy.o sstruct_copy.o sstruct_graph.o sstruct_grid.o sstruct_innerprod.o sstruct_matrix.o sstruct_matvec.o sstruct_scale.o sstruct_stencil.o sstruct_vector.o
+ranlib libHYPRE_sstruct_mv.a
+cp -fR ./HYPRE_*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./_hypre_sstruct_mv.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/sstruct_mv'
+
+Making sstruct_ls ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/sstruct_ls'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c F90_HYPRE_sstruct_bicgstab.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c F90_HYPRE_sstruct_gmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c F90_HYPRE_sstruct_flexgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c F90_HYPRE_sstruct_lgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c F90_HYPRE_sstruct_InterFAC.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c F90_HYPRE_sstruct_int.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c F90_HYPRE_sstruct_maxwell.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c F90_HYPRE_sstruct_pcg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c F90_HYPRE_sstruct_split.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c F90_HYPRE_sstruct_sys_pfmg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c HYPRE_sstruct_bicgstab.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c HYPRE_sstruct_gmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c HYPRE_sstruct_flexgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c HYPRE_sstruct_lgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c HYPRE_sstruct_InterFAC.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c HYPRE_sstruct_int.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c HYPRE_sstruct_maxwell.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c HYPRE_sstruct_pcg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c HYPRE_sstruct_split.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c HYPRE_sstruct_sys_pfmg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_amr_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_amr_fcoarsen.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_amr_zero_data.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_cf_coarsen.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_cfstencil_box.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_CFInterfaceExtents.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_interp2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_relax.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_restrict2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_setup2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_solve3.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_zero_cdata.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c fac_zero_stencilcoef.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c hypre_bsearch.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c krylov.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c krylov_sstruct.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c eliminate_rowscols.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c maxwell_grad.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c maxwell_physbdy.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c maxwell_PNedelec.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c maxwell_PNedelec_bdy.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c maxwell_semi_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c maxwell_TV.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c maxwell_TV_setup.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c maxwell_zeroBC.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c hypre_MaxwellSolve.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c hypre_MaxwellSolve2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c nd1_amge_interpolation.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c node_relax.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sstruct_amr_intercommunication.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sstruct_owninfo.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sstruct_recvinfo.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sstruct_sendinfo.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sstruct_sharedDOFComm.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sys_pfmg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sys_pfmg_relax.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sys_pfmg_setup.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sys_pfmg_setup_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sys_pfmg_setup_rap.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sys_pfmg_solve.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sys_semi_interp.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I.. -I. -I./.. -I./../multivector -I./../utilities -I./../krylov -I./../struct_mv -I./../seq_mv -I./../parcsr_mv -I./../IJ_mv -I./../sstruct_mv -I./../struct_ls -I./../parcsr_ls   -c sys_semi_restrict.c 
+Building libHYPRE_sstruct_ls.a ... 
+ar -rcu libHYPRE_sstruct_ls.a F90_HYPRE_sstruct_bicgstab.o F90_HYPRE_sstruct_gmres.o F90_HYPRE_sstruct_flexgmres.o F90_HYPRE_sstruct_lgmres.o F90_HYPRE_sstruct_InterFAC.o F90_HYPRE_sstruct_int.o F90_HYPRE_sstruct_maxwell.o F90_HYPRE_sstruct_pcg.o F90_HYPRE_sstruct_split.o F90_HYPRE_sstruct_sys_pfmg.o HYPRE_sstruct_bicgstab.o HYPRE_sstruct_gmres.o HYPRE_sstruct_flexgmres.o HYPRE_sstruct_lgmres.o HYPRE_sstruct_InterFAC.o HYPRE_sstruct_int.o HYPRE_sstruct_maxwell.o HYPRE_sstruct_pcg.o HYPRE_sstruct_split.o HYPRE_sstruct_sys_pfmg.o fac.o fac_amr_rap.o fac_amr_fcoarsen.o fac_amr_zero_data.o fac_cf_coarsen.o fac_cfstencil_box.o fac_CFInterfaceExtents.o fac_interp2.o fac_relax.o fac_restrict2.o fac_setup2.o fac_solve3.o fac_zero_cdata.o fac_zero_stencilcoef.o hypre_bsearch.o krylov.o krylov_sstruct.o eliminate_rowscols.o maxwell_grad.o maxwell_physbdy.o maxwell_PNedelec.o maxwell_PNedelec_bdy.o maxwell_semi_interp.o maxwell_TV.o maxwell_TV_setup.o maxwell_zeroBC.o hypre_MaxwellSolve.o hypre_MaxwellSolve2.o nd1_amge_interpolation.o node_relax.o sstruct_amr_intercommunication.o sstruct_owninfo.o sstruct_recvinfo.o sstruct_sendinfo.o sstruct_sharedDOFComm.o sys_pfmg.o sys_pfmg_relax.o sys_pfmg_setup.o sys_pfmg_setup_interp.o sys_pfmg_setup_rap.o sys_pfmg_solve.o sys_semi_interp.o sys_semi_restrict.o
+ranlib libHYPRE_sstruct_ls.a
+cp -fR ./HYPRE_*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./_hypre_sstruct_ls.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/sstruct_ls'
+
+Making /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv'
+Making femli ...
+make[4]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/femli'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DMLI_SUPERLU -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_utils.c 
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_amgsa_calib.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_amgsa_coarsen1.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_amgsa_dd_fedata.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_amgsa_dd_sfei.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_method.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_method_amgcr.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_method_amgrs.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_method_amgsa.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_oneLevel.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c cmli.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_febase.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_fedata.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_fedata_utils.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_sfei.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_mapper.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_matrix.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_matrix_mult.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_matrix_utils.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_jacobi.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_bjacobi.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_gs.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_sgs.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_bsgs.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_hsgs.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_hschwarz.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_parasails.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_mls.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_mli.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_amg.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_chebyshev.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_cg.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_gmres.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_kaczmarz.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_superlu.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_seqsuperlu.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_solver_arpacksuperlu.cxx
+g++ -O2 -DHAVE_CONFIG_H -DMLI_SUPERLU -DMPICH_SKIP_MPICXX -I. -I../.. -I. -I./../../lapack -I./../../utilities -I./../../IJ_mv -I./../../krylov -I./../../multivector -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../../FEI_mv/fei-hypre -I./../../FEI_mv/femli -I./../../FEI_mv/SuperLU/SRC   -c mli_vector.cxx
+Building libHYPRE_mli.a ... 
+ar -rcu libHYPRE_mli.a mli_utils.o mli_amgsa_calib.o mli_amgsa_coarsen1.o mli_amgsa_dd_fedata.o mli_amgsa_dd_sfei.o mli_method.o mli_method_amgcr.o mli_method_amgrs.o mli_method_amgsa.o mli.o mli_oneLevel.o cmli.o mli_febase.o mli_fedata.o mli_fedata_utils.o mli_sfei.o mli_mapper.o mli_matrix.o mli_matrix_mult.o mli_matrix_utils.o mli_solver.o mli_solver_jacobi.o mli_solver_bjacobi.o mli_solver_gs.o mli_solver_sgs.o mli_solver_bsgs.o mli_solver_hsgs.o mli_solver_hschwarz.o mli_solver_parasails.o mli_solver_mls.o mli_solver_mli.o mli_solver_amg.o mli_solver_chebyshev.o mli_solver_cg.o mli_solver_gmres.o mli_solver_kaczmarz.o mli_solver_superlu.o mli_solver_seqsuperlu.o mli_solver_arpacksuperlu.o mli_vector.o
+ranlib libHYPRE_mli.a
+make[4]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/femli'
+Making SuperLU ...
+make[4]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/SuperLU'
+( cd SRC; make all)
+make[5]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/SuperLU/SRC'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c colamd.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dcolumn_bmod.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dcolumn_dfs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dcopy_to_ucol.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dgscon.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dgsequ.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dgsrfs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dgssv.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dgssvx.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dgstrf.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dgstrs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dlacon.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dlangs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dlaqgs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dmemory.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dpanel_bmod.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dpanel_dfs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dpivotgrowth.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dpivotL.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dpruneL.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dreadhb.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dsnode_bmod.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dsnode_dfs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dsp_blas2.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dsp_blas3.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c dutil.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c get_perm_c.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c heap_relax_snode.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c memory.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c mmd.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c relax_snode.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c sp_coletree.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c sp_ienv.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c sp_preorder.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c superlu_timer.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -I. -I./../../../ -I./../../../utilities -I./../../../blas -I./../../../lapack   -c slu_util.c 
+Building libHYPRE_superlu.a ... 
+ar -rcu libHYPRE_superlu.a colamd.o dcolumn_bmod.o dcolumn_dfs.o dcopy_to_ucol.o dgscon.o dgsequ.o dgsrfs.o dgssv.o dgssvx.o dgstrf.o dgstrs.o dlacon.o dlangs.o dlaqgs.o dmemory.o dpanel_bmod.o dpanel_dfs.o dpivotgrowth.o dpivotL.o dpruneL.o dreadhb.o dsnode_bmod.o dsnode_dfs.o dsp_blas2.o dsp_blas3.o dutil.o get_perm_c.o heap_relax_snode.o memory.o mmd.o relax_snode.o sp_coletree.o sp_ienv.o sp_preorder.o superlu_timer.o slu_util.o
+ranlib libHYPRE_superlu.a
+cp -fp *.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[5]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/SuperLU/SRC'
+make[4]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/SuperLU'
+Making fei-hypre ...
+make[4]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-hypre'
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_LSI_Dsuperlu.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_LSI_ddict.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_LSI_ddilut.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_LSI_ml.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_LSI_mlmaxwell.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_LSI_poly.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_LSI_schwarz.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_parcsr_TFQmr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_parcsr_bicgs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_parcsr_bicgstabl.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_parcsr_fgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_parcsr_lsicg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_parcsr_symqmr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_parcsr_maxwell.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c SymQMR.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c TFQmr.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c bicgs.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c bicgstabl.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c fgmres.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c hypre_lsi_amge.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c hypre_lsi_ddamg.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c hypre_lsi_misc.c 
+/usr/bin/gcc -mcmodel=medium -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I. -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c lsicg.c 
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c FEI_HYPRE_Impl.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c LLNL_FEI_Impl.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c LLNL_FEI_Fei.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c LLNL_FEI_LSCore.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c LLNL_FEI_Solver.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c LLNL_FEI_Matrix.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_LSC_aux.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_LSI_UZAWA.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_LSI_blkprec.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_LSI_mli.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_LinSysCore.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_SlideReduction.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c cfei_hypre.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c hypre_cfei.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c hypre_schur_reduce.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c hypre_slide_reduce.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_fei_mesh.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_fei_matrix.cxx
+g++ -O2 -DHAVE_CONFIG_H -DHAVE_SUPERLU -DBOOL_NOT_SUPPORTED -DMPICH_SKIP_MPICXX -DHAVE_MLI -I../.. -I/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base -I./../.. -I./../../lapack -I./../../IJ_mv -I./../../utilities -I./../../multivector -I./../../krylov -I./../../parcsr_mv -I./../../parcsr_ls -I./../../seq_mv -I./../../distributed_matrix -I./../../distributed_ls -I./../femli -I./../fei-base -I./../SuperLU/SRC   -I../ml/src/Include -c HYPRE_fei_vector.cxx
+Building libHYPRE_FEI.a ... 
+ar -rcu libHYPRE_FEI.a HYPRE_LSI_Dsuperlu.o HYPRE_LSI_ddict.o HYPRE_LSI_ddilut.o HYPRE_LSI_ml.o HYPRE_LSI_mlmaxwell.o HYPRE_LSI_poly.o HYPRE_LSI_schwarz.o HYPRE_parcsr_TFQmr.o HYPRE_parcsr_bicgs.o HYPRE_parcsr_bicgstabl.o HYPRE_parcsr_fgmres.o HYPRE_parcsr_lsicg.o HYPRE_parcsr_symqmr.o HYPRE_parcsr_maxwell.o SymQMR.o TFQmr.o bicgs.o bicgstabl.o fgmres.o hypre_lsi_amge.o hypre_lsi_ddamg.o hypre_lsi_misc.o lsicg.o FEI_HYPRE_Impl.o LLNL_FEI_Impl.o LLNL_FEI_Fei.o LLNL_FEI_LSCore.o LLNL_FEI_Solver.o LLNL_FEI_Matrix.o HYPRE_LSC_aux.o HYPRE_LSI_UZAWA.o HYPRE_LSI_blkprec.o HYPRE_LSI_mli.o HYPRE_LinSysCore.o HYPRE_SlideReduction.o cfei_hypre.o hypre_cfei.o hypre_schur_reduce.o hypre_slide_reduce.o HYPRE_fei_mesh.o HYPRE_fei_matrix.o HYPRE_fei_vector.o
+ranlib libHYPRE_FEI.a
+cp -fR ./cfei-hypre.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./cfei_hypre.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./hypre_cfei.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./HYPRE_LinSysCore.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./HYPRE_FEI*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR ./LLNL_FEI*.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base/fei_Data.hpp /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base/fei_Lookup.hpp /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base/fei_LinearSystemCore.hpp /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base/cfei.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base/fei_bool.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base/fei_defs.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+cp -fR /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-base/fei_mpi.h /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/include
+make[4]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-hypre'
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv'
+
+Making lib ...
+make[3]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/lib'
+Building libHYPRE ... 
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/SuperLU/SRC/*.o /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/fei-hypre/*.o /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/FEI_mv/femli/*.o /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/IJ_mv/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_ls/Euclid/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_ls/ParaSails/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_ls/pilut/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/distributed_matrix/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/krylov/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/matrix_matrix/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/multivector/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/parcsr_ls/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/parcsr_mv/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/parcsr_block_mv/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/seq_mv/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/sstruct_ls/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/sstruct_mv/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/struct_ls/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/struct_mv/*.o
+ar -rcu libHYPRE.a /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/utilities/*.o /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/blas/*.o /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/lapack/*.o
+ranlib libHYPRE.a
+cp -fR libHYPRE* /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/hypre/lib
+make[3]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/lib'
+
+Installing hypre ...
+mkdir -p -- /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/../../lib /home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src/../../include
+
+make[2]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre/hypre/hypre-2.11.2/src'
+/usr/bin/gcc -DHAVE_CONFIG_H -DHYPRE_TIMING  -DUNDERSCORE -mcmodel=medium -I./hypre/include -c amg_hypre.c
+/usr/bin/gcc -o /home/tjohnson/temp/david_nek5000_lpm_stable/bin/amg_hypre amg_hypre.o ./hypre/lib/libHYPRE.a  -lm
+make[1]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/amg_hypre'
+
+----------------------
+Make genmap...
+----------------------
+make[1]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/genmap'
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium -fdefault-real-8 genmap.f
+/usr/bin/gcc -c  -DUNDERSCORE -mcmodel=medium ../../core/byte.c
+/usr/bin/gfortran -DMAXNEL=150000 -cpp -mcmodel=medium -fdefault-real-8 -o /home/tjohnson/temp/david_nek5000_lpm_stable/bin/genmap genmap.o byte.o  
+make[1]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/genmap'
+
+----------------------
+Make nekmerge...
+----------------------
+make[1]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/nekmerge'
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium  nekmerge.f 
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium  reader.f 
+/usr/bin/gcc -c  -DUNDERSCORE -mcmodel=medium  byte.c
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium  strings.f 
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium  tsort.f 
+/usr/bin/gfortran -DMAXNEL=150000 -cpp -mcmodel=medium -o  /home/tjohnson/temp/david_nek5000_lpm_stable/bin/nekmerge nekmerge.o reader.o byte.o strings.o tsort.o 
+make[1]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/nekmerge'
+
+----------------------
+Make prenek...
+----------------------
+make[1]: Entering directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/prenek'
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium prenek.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium curve.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium edit.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium build.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium build1.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium build2.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium bound.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium plot.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium xinterface.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium glomod.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium legend.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium vprops.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium iolib.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium subs.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium zipper2.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium postnek6.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium screen.f
+/usr/bin/gcc -c  -DUNDERSCORE -mcmodel=medium -Dr8 revert.c
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium crs.f
+/usr/bin/gfortran -c -DMAXNEL=150000 -cpp -mcmodel=medium mxm.f
+/usr/bin/gcc -c  -DUNDERSCORE -mcmodel=medium -Dr8 xdriver.c
+makefile:63: recipe for target 'xdriver.o' failed
+make[1]: Leaving directory '/home/tjohnson/temp/david_nek5000_lpm_stable/tools/prenek'
+
+ERROR: prenek failed to compile!
+makefile:4: recipe for target 'all' failed
