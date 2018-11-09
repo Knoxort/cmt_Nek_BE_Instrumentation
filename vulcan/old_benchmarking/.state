@@ -1,6 +1,0 @@
-SOURCE_ROOT=/g/g19/trokon/temp/dv_nek5000_lpm_stable
-FC=mpixlf77
-FFLAGS= -qrealsize=8 -qdpc=e -qsuffix=cpp=f -qsuppress=cmpmsg
-CC=mpixlcxx
-CFLAGS=
-PPLIST=LPM MPI TIMER
