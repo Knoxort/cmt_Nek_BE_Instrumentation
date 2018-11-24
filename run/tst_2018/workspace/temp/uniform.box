@@ -1,0 +1,11 @@
+-3            spatial dimension
+1             number of scalar fields
+#========================================================
+#
+#========================================================
+Box
+-32 -74 -12   nelx, nely, nelz  
+0.0 32.00    1.0   x0  , x1  , ratio
+0.0 774.0    1.0   y0  , y1  , ratio
+0.0 12.000    1.0   z0  , z1  , ratio
+P  ,P  ,W  ,O  ,P  ,P    bc's  (3 chars each, including blanks!)

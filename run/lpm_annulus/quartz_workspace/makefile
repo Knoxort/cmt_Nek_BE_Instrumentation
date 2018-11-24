@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream:run/lpm_annulus/workspace/makefile
 ### makefile automatically created by makenek 10/24/2018 08:58:55 ###
 =======
@@ -9,6 +10,15 @@ CASENAME:=uniform
 CASEDIR:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation/run/lpm_annulus/annulus_workspace
 S:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation/core
 SCMT:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation/core/cmt
+=======
+### makefile automatically created by makenek 11/03/2018 07:06:47 ###
+BINNAME=nek5000
+LIBNAME=libnek5000.a
+CASENAME:=uniform
+CASEDIR:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/run/lpm_annulus/quartz_workspace
+S:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/core
+SCMT:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/core/cmt
+>>>>>>> 1c1ee39022ac7d43de28a1912841d88b488d74d7
 OPT_INCDIR=./
 OBJDIR=obj
 MPI:=1
@@ -22,7 +32,11 @@ CFLAGS:=
 PPPO=
 PPS=LPM MPI UNDERSCORE TIMER
 USR:=
+<<<<<<< HEAD
 USR_LFLAGS:= -L/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation/3rd_party/gslib/lib -lgs
+=======
+USR_LFLAGS:= -L/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/3rd_party/gslib/lib -lgs
+>>>>>>> 1c1ee39022ac7d43de28a1912841d88b488d74d7
 VISIT:=0
 VISIT_IFLAGS=
 VISIT_LFLAGS=

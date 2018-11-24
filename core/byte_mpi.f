@@ -17,9 +17,12 @@ C--------------------------------------------------------------------------
 
       character fnamei*(*)
       logical ifro
- 
-      character*132 fname
-      character*1   fname1(132)
+
+c       TJL 
+c      character*132 fname
+c      character*1   fname1(132)
+      character*256 fname
+      character*1   fname1(256)
       equivalence  (fname1,fname)
 
       l = ltrunc(fnamei,len(fnamei))

@@ -1,0 +1,89 @@
+Files temp/SESSION.NAME and quartz_core_2lx1_5lelt_4alpha_1/SESSION.NAME differ
+Files temp/SIZE and quartz_core_2lx1_5lelt_4alpha_1/SIZE differ
+Files temp/compiler.out and quartz_core_2lx1_5lelt_4alpha_1/compiler.out differ
+Files temp/makefile and quartz_core_2lx1_5lelt_4alpha_1/makefile differ
+Files temp/nek5000 and quartz_core_2lx1_5lelt_4alpha_1/nek5000 differ
+Files temp/obj/reader_re2.o and quartz_core_2lx1_5lelt_4alpha_1/obj/reader_re2.o differ
+Files temp/obj/reader_rea.o and quartz_core_2lx1_5lelt_4alpha_1/obj/reader_rea.o differ
+Files temp/obj/singlmesh.o and quartz_core_2lx1_5lelt_4alpha_1/obj/singlmesh.o differ
+Files temp/obj/ssolv.o and quartz_core_2lx1_5lelt_4alpha_1/obj/ssolv.o differ
+Files temp/obj/subs1.o and quartz_core_2lx1_5lelt_4alpha_1/obj/subs1.o differ
+Files temp/obj/subs2.o and quartz_core_2lx1_5lelt_4alpha_1/obj/subs2.o differ
+Files temp/obj/uniform.o and quartz_core_2lx1_5lelt_4alpha_1/obj/uniform.o differ
+Files temp/obj/vprops.o and quartz_core_2lx1_5lelt_4alpha_1/obj/vprops.o differ
+Files temp/run.sh and quartz_core_2lx1_5lelt_4alpha_1/run.sh differ
+Files temp/uniform.ma2 and quartz_core_2lx1_5lelt_4alpha_1/uniform.ma2 differ
+Only in quartz_core_2lx1_5lelt_4alpha_1/: gbox.in
+Only in quartz_core_2lx1_5lelt_4alpha_1/: log_quartz_core_2lx1_5lelt_4alpha_1.txt
+Only in quartz_core_2lx1_5lelt_4alpha_1/: profiles
+Only in quartz_core_2lx1_5lelt_4alpha_1/: quartz_generate.sh
+Only in quartz_core_2lx1_5lelt_4alpha_1/: slurm-1703404.out
+Only in quartz_core_2lx1_5lelt_4alpha_1/: slurm-1703608.out
+Only in temp/: box.re2
+Only in temp/: box.tmp
+
+Probably not these:
+ 
+Files temp/obj/bdry.o and quartz_core_2lx1_5lelt_4alpha_1/obj/bdry.o differ
+Files temp/obj/coef.o and quartz_core_2lx1_5lelt_4alpha_1/obj/coef.o differ
+Files temp/obj/comm_mpi.o and quartz_core_2lx1_5lelt_4alpha_1/obj/comm_mpi.o differ
+Files temp/obj/conduct.o and quartz_core_2lx1_5lelt_4alpha_1/obj/conduct.o differ
+Files temp/obj/connect1.o and quartz_core_2lx1_5lelt_4alpha_1/obj/connect1.o differ
+Files temp/obj/connect2.o and quartz_core_2lx1_5lelt_4alpha_1/obj/connect2.o differ
+Files temp/obj/convect.o and quartz_core_2lx1_5lelt_4alpha_1/obj/convect.o differ
+Files temp/obj/cvode_driver.o and quartz_core_2lx1_5lelt_4alpha_1/obj/cvode_driver.o differ
+Files temp/obj/drive1.o and quartz_core_2lx1_5lelt_4alpha_1/obj/drive1.o differ
+Files temp/obj/drive2.o and quartz_core_2lx1_5lelt_4alpha_1/obj/drive2.o differ
+Files temp/obj/dssum.o and quartz_core_2lx1_5lelt_4alpha_1/obj/dssum.o differ
+Files temp/obj/eigsolv.o and quartz_core_2lx1_5lelt_4alpha_1/obj/eigsolv.o differ
+Files temp/obj/fast3d.o and quartz_core_2lx1_5lelt_4alpha_1/obj/fast3d.o differ
+Files temp/obj/fasts.o and quartz_core_2lx1_5lelt_4alpha_1/obj/fasts.o differ
+Files temp/obj/genbox.o and quartz_core_2lx1_5lelt_4alpha_1/obj/genbox.o differ
+Files temp/obj/genxyz.o and quartz_core_2lx1_5lelt_4alpha_1/obj/genxyz.o differ
+Files temp/obj/gfdm_op.o and quartz_core_2lx1_5lelt_4alpha_1/obj/gfdm_op.o differ
+Files temp/obj/gfdm_par.o and quartz_core_2lx1_5lelt_4alpha_1/obj/gfdm_par.o differ
+Files temp/obj/gfdm_solve.o and quartz_core_2lx1_5lelt_4alpha_1/obj/gfdm_solve.o differ
+Files temp/obj/gfldr.o and quartz_core_2lx1_5lelt_4alpha_1/obj/gfldr.o differ
+Files temp/obj/gmres.o and quartz_core_2lx1_5lelt_4alpha_1/obj/gmres.o differ
+Files temp/obj/hmholtz.o and quartz_core_2lx1_5lelt_4alpha_1/obj/hmholtz.o differ
+Files temp/obj/hpf.o and quartz_core_2lx1_5lelt_4alpha_1/obj/hpf.o differ
+Files temp/obj/hsmg.o and quartz_core_2lx1_5lelt_4alpha_1/obj/hsmg.o differ
+Files temp/obj/ic.o and quartz_core_2lx1_5lelt_4alpha_1/obj/ic.o differ
+Files temp/obj/induct.o and quartz_core_2lx1_5lelt_4alpha_1/obj/induct.o differ
+Files temp/obj/intp_usr.o and quartz_core_2lx1_5lelt_4alpha_1/obj/intp_usr.o differ
+Files temp/obj/lpm.o and quartz_core_2lx1_5lelt_4alpha_1/obj/lpm.o differ
+Files temp/obj/makeq.o and quartz_core_2lx1_5lelt_4alpha_1/obj/makeq.o differ
+Files temp/obj/makeq_aux.o and quartz_core_2lx1_5lelt_4alpha_1/obj/makeq_aux.o differ
+Files temp/obj/map2.o and quartz_core_2lx1_5lelt_4alpha_1/obj/map2.o differ
+Files temp/obj/math.o and quartz_core_2lx1_5lelt_4alpha_1/obj/math.o differ
+Files temp/obj/mvmesh.o and quartz_core_2lx1_5lelt_4alpha_1/obj/mvmesh.o differ
+Files temp/obj/mxm_std.o and quartz_core_2lx1_5lelt_4alpha_1/obj/mxm_std.o differ
+Files temp/obj/mxm_wrapper.o and quartz_core_2lx1_5lelt_4alpha_1/obj/mxm_wrapper.o differ
+Files temp/obj/navier0.o and quartz_core_2lx1_5lelt_4alpha_1/obj/navier0.o differ
+Files temp/obj/navier1.o and quartz_core_2lx1_5lelt_4alpha_1/obj/navier1.o differ
+Files temp/obj/navier2.o and quartz_core_2lx1_5lelt_4alpha_1/obj/navier2.o differ
+Files temp/obj/navier3.o and quartz_core_2lx1_5lelt_4alpha_1/obj/navier3.o differ
+Files temp/obj/navier4.o and quartz_core_2lx1_5lelt_4alpha_1/obj/navier4.o differ
+Files temp/obj/navier5.o and quartz_core_2lx1_5lelt_4alpha_1/obj/navier5.o differ
+Files temp/obj/navier6.o and quartz_core_2lx1_5lelt_4alpha_1/obj/navier6.o differ
+Files temp/obj/navier7.o and quartz_core_2lx1_5lelt_4alpha_1/obj/navier7.o differ
+Files temp/obj/navier8.o and quartz_core_2lx1_5lelt_4alpha_1/obj/navier8.o differ
+Files temp/obj/perturb.o and quartz_core_2lx1_5lelt_4alpha_1/obj/perturb.o differ
+Files temp/obj/plan4.o and quartz_core_2lx1_5lelt_4alpha_1/obj/plan4.o differ
+Files temp/obj/plan5.o and quartz_core_2lx1_5lelt_4alpha_1/obj/plan5.o differ
+Files temp/obj/planx.o and quartz_core_2lx1_5lelt_4alpha_1/obj/planx.o differ
+Files temp/obj/postpro.o and quartz_core_2lx1_5lelt_4alpha_1/obj/postpro.o differ
+Files temp/obj/prepost.o and quartz_core_2lx1_5lelt_4alpha_1/obj/prepost.o differ
+Files temp/obj/reader_par.o and quartz_core_2lx1_5lelt_4alpha_1/obj/reader_par.o differ
+Only in temp/: part00001.pvtu
+Only in temp/: part00001_p00000.vtu
+Only in temp/: part00002.pvtu
+Only in temp/: part00002_p00000.vtu
+Only in temp/: rpart00001
+Only in temp/: rpart00002
+Only in temp/: slurm-1691114.out
+Only in temp/: slurm-1691118.out
+Only in temp/: slurm-1693775.out
+Only in temp/: log_my_workspace.txt
+Only in temp/: log_succesful.txt
+Only in temp/: slurm-1703589.out

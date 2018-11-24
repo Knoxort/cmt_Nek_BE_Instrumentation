@@ -1,10 +1,10 @@
-### makefile automatically created by makenek 10/21/2018 12:04:52 ###
+### makefile automatically created by makenek 10/25/2018 07:00:53 ###
 BINNAME=nek5000
 LIBNAME=libnek5000.a
 CASENAME:=uniform
-CASEDIR:=/home/tjohnson/work/research/NGEE/workspace/Nek5000-lpm_stable/run/lpm_fbed
-S:=/home/tjohnson/work/research/NGEE/workspace/Nek5000-lpm_stable/core
-SCMT:=/home/tjohnson/work/research/NGEE/workspace/Nek5000-lpm_stable/core/cmt
+CASEDIR:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/run/lpm_fbed
+S:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/core
+SCMT:=/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/core/cmt
 OPT_INCDIR=./
 OBJDIR=obj
 MPI:=1
@@ -13,12 +13,12 @@ LPM:=1
 NEKNEK:=0
 FC:=mpif77
 CC:=mpicc
-FFLAGS:= -fdefault-real-8 -fdefault-double-8 -cpp
+FFLAGS:= -r8 -fpconstant -fpp
 CFLAGS:=
 PPPO=
 PPS=LPM MPI UNDERSCORE TIMER
 USR:=
-USR_LFLAGS:= -L/home/tjohnson/work/research/NGEE/workspace/Nek5000-lpm_stable/3rd_party/gslib/lib -lgs
+USR_LFLAGS:= -L/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/3rd_party/gslib/lib -lgs
 VISIT:=0
 VISIT_IFLAGS=
 VISIT_LFLAGS=

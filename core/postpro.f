@@ -7,8 +7,10 @@
       character string*(*)
 
       l = ltrunc(string,len(string))
+c      if(l.gt.256) call exitti('invalid string length$',l)
       if(l.gt.132) call exitti('invalid string length$',l)
 
+c      call blank  (initc(1),256)
       call blank  (initc(1),132)
       call chcopy (initc(1),string,l)
       call setics

@@ -100,6 +100,11 @@ c        main loop to distribute particles
   754 continue
             ! Error checking
             if (n.gt.llpart)then 
+                write(6,*)'Debug Stats'  
+                write(6,*),'n:',n  
+                write(6,*),'llpart:',llpart  
+            endif
+            if (n.gt.llpart)then 
                if (nid.eq.0)
      >            write(6,*)'Not enough space to store more particles'
                call exitt
@@ -5095,8 +5100,8 @@ c            end_cfpp = dnekclock()
          ptdum(1) = dnekclock()
       enddo
 
-      if (nid.eq.0) write(6,*) 'FINISHED PRE COLLISIONS - EXITING NOW'
-      call exitt
+      if (nid.eq.0) write(6,*) 'FINISHED PRE COLLISIONS - NOT EXITING'
+!      call exitt
 
       return
       end

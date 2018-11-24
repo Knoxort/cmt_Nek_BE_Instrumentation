@@ -1,0 +1,2 @@
+2018-11-01 06:53:49.278 (FATAL) [0x400033af950] 30179:ibm.runjob.client.Job: could not start job: job failed to start
+2018-11-01 06:53:49.279 (FATAL) [0x400033af950] 30179:ibm.runjob.client.Job: Load failed on R26-ID-J01: Application executable ELF header contains invalid value, errno 8 Exec format error

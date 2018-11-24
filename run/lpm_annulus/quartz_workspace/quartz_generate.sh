@@ -2,6 +2,12 @@
 chmod 777 makenek
 /g/g19/trokon/workspace/nek_4way/Nek5000-lpm_stable/bin/makenek clean
 /g/g19/trokon/workspace/nek_4way/Nek5000-lpm_stable/bin/makenek uniform 
+<<<<<<< HEAD
+=======
+
+/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/bin/makenek clean
+/g/g19/trokon/workspace/cmt_Nek_BE_Instrumentation_repo/bin/makenek uniform 
+>>>>>>> 1c1ee39022ac7d43de28a1912841d88b488d74d7
 	#This really needs to be a case by case variable name
 
 FILE="nek5000"
